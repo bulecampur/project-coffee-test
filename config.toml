@@ -1,0 +1,21 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'project-coffee'
+relativeURLS = true
+  
+[module]
+    [[module.mounts]]
+      source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      target = "assets/js/bootstrap.bundle.min.js"
+
+[menu]
+    [[menu.main]] # example for menu link to home
+      name= "Home"
+      url = "/"
+      weight = "20"
+    [[menu.main]] # example for external links
+      name = "Github"
+      url = "http://www.github.com"
+      weight = "90"
+

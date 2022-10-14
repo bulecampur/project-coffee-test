@@ -1,0 +1,31 @@
+{
+  "name": "origin-coffee",
+  "version": "1.0.0",
+  "description": "A site that sells specialty coffee",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npm run lint:eslint && npm run lint:prettier .",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:eslint": "eslint --fix .",
+    "lint:prettier": "prettier --write ."
+  },
+  "keywords": [
+    "Origins",
+    "coffee",
+    "specialty",
+    "coffee"
+  ],
+  "author": "Christian Seiler",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
+}

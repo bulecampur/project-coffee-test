@@ -1,0 +1,10 @@
+<!-- JavaScript and dependencies -->
+
+{{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+{{ $js := slice $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
+
+
+<script src="{{ $js.RelPermalink }}" defer></script>
+
+<!-- Additional Javascript-->
+<!-- <script src="/static/js/index.js"></script> -->
